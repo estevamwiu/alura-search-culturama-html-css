@@ -34,10 +34,12 @@
                     <input id="email" type="email" name="userEmail">
                     <br>
                     <label for="phoneNumber">Telefone:</label>
-                    <input id="phoneNumber" type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="DD + número sem espaço ou hífen">
+                    <input id="phoneNumber" type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="DD + número sem espaço ou hífen" aria-describedby="phoneHelp">
+                    <small id = "phoneHelp">Preencha com 11 dígitos no formato DDD + número sem espaços ou hífens</small>
                     <br>
                     <label for="idImage">Upload de Foto:</label>
-                    <input id="idImage" type="file" accept="image/*" name="userImage">
+                    <input id="idImage" type="file" accept="image/*" name="userImage" aria-describedby="imageHelp">
+                    <small id = "imageHelp">Envie uma foto no formato JPEG ou PNG.</small>
                     <br>
             </fieldset>
 
@@ -128,8 +130,8 @@
                 <fieldset>
                     <legend>Opinião</legend>
                     <p>O que você acha da qualidade do nosso serviço?</p><br>
-                    <input id="otimo" type="radio" name="UserSatisfaction" value="otima">
-                    <label for="ótimo">Ótima</label>
+                    <input id="otima" type="radio" name="UserSatisfaction" value="otima">
+                    <label for="otima">Ótima</label>
                     <input id="boa" type="radio" name="UserSatisfaction" value="boa">
                     <label for="boa">Boa</label>
                     <input id="regular" type="radio" name="UserSatisfaction" value="regular">
@@ -151,8 +153,8 @@
                     <label for="userLgpdTerm">Desejo receber o resultado pelo e-mail.</label><br>
                 </fieldset>
                     <br>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpar</button>
+                    <button type="submit" aria-label="Enviar dados do formulário">Enviar</button>
+                    <button type="reset" aria-label="Limpar campos do formulário">Limpar</button>
         </form>
     </section>
     </main>
