@@ -11,9 +11,10 @@
     <title>Pesquisa Culturama</title>
 </head>
 <body>
+    <main>
     <header>
         <img src="img/logo-culturama.png" alt="Logo da Culturama">
-        <h1>Pesquisa Online</h1>
+        <h1>Pesquisa de Opinião</h1>
     </header>
     <section>
         <form action="" method="get">
@@ -30,7 +31,7 @@
                     <input id="birthDate" type="date" name="userBirthDate">
                     <br>
                     <label for="email">Email:</label>
-                    <input id="email" type="email" name="userEmail" required>
+                    <input id="email" type="email" name="userEmail">
                     <br>
                     <label for="phoneNumber">Telefone:</label>
                     <input id="phoneNumber" type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="DD + número sem espaço ou hífen">
@@ -42,7 +43,7 @@
 
             <fieldset>
                 <legend>Perfil</legend>
-                    <p>Gênero:</p>
+                    <p>Gênero:</p><br>
                     <input id="masc" type="radio" name="UserGender" value="Masculino">
                     <label for="masc">Masculino</label>
 
@@ -95,7 +96,7 @@
 
             <fieldset>
                 <legend>Hábitos</legend>
-                <p>Redes sociais</p>
+                <p>Redes sociais</p><br>
                 <input id="instagram" type="checkbox" name="social" value="instagram">
                 <label for="instagram">Instagram</label>
                 <br>
@@ -126,7 +127,7 @@
                 <br><br>
                 <fieldset>
                     <legend>Opinião</legend>
-                    <p>O que você acha da qualidade do nosso serviço?</p>
+                    <p>O que você acha da qualidade do nosso serviço?</p><br>
                     <input id="otimo" type="radio" name="UserSatisfaction" value="otima">
                     <label for="ótimo">Ótima</label>
                     <input id="boa" type="radio" name="UserSatisfaction" value="boa">
@@ -154,5 +155,7 @@
                     <button type="reset">Limpar</button>
         </form>
     </section>
+    </main>
+
 </body>
 </html>
